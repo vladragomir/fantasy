@@ -1,0 +1,36 @@
+<main class="hotel-view">
+  <div class="gallery">
+    <figure class="gallery__item">
+      <img src="../../assets/img/hotel-1.jpg" alt="Photo of hotel 1" class="gallery__photo" style="height: 100%;">
+    </figure>
+    <figure class="gallery__item">
+      <img src="../../assets/img/hotel-2.jpg" alt="Photo of hotel 2" class="gallery__photo">
+    </figure>
+    <figure class="gallery__item">
+      <img src="../../assets/img/hotel-3.jpg" alt="Photo of hotel 3" class="gallery__photo">
+    </figure>
+  </div>
+
+  <div class="overview">
+    <h1 class="overview__heading">
+      "lumea este o carte, iar cei care nu călătoresc nu pot citi decât o pagină din ea"
+    </h1>
+  </div>
+
+  <div class="detail">
+    <div class="description">
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+
+  <div class="cta">
+    <h2 class="cta__book-now">
+      Poti rezerva si de pe booking.com!
+    </h2>
+    <button class="btn" (click)="onBooking()">
+      <span class="btn__visible">Rezerva acum</span>
+      <span class="btn__invisible">Booking.com</span>
+    </button>
+  </div>
+
+</main>

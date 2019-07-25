@@ -1,0 +1,36 @@
+<nav class="sidebar inherit">
+  <ul class="side-nav">
+    <li class="side-nav__item" [ngClass]="{'side-nav__item--active': getActiveLink()==='home'}">
+      <a href="#" class="side-nav__link" routerLink="/home">
+        <svg class="side-nav__icon">
+          <use xlink:href="../../assets/img/sprite.svg#icon-home"></use>
+        </svg>
+        <span>Fantasy</span>
+      </a>
+    </li>
+    <li class="side-nav__item" [ngClass]="{'side-nav__item--active': getActiveLink()==='rooms'}">
+      <a href="#" class="side-nav__link" routerLink="/rooms">
+        <svg class="side-nav__icon">
+          <use xlink:href="../../assets/img/sprite.svg#icon-key"></use>
+        </svg>
+        <span>Camere</span>
+      </a>
+    </li>
+    <li class="side-nav__item" [ngClass]="{'side-nav__item--active': getActiveLink()==='packages'}">
+      <a href="#" class="side-nav__link" routerLink="/packages">
+        <svg class="side-nav__icon">
+          <use xlink:href="../../assets/img/sprite.svg#icon-new"></use>
+        </svg>
+        <span>Oferte</span>
+      </a>
+    </li>
+    <li class="side-nav__item" [ngClass]="{'side-nav__item--active': getActiveLink()==='contact'}">
+      <a href="#" class="side-nav__link" routerLink="/contact">
+        <svg class="side-nav__icon">
+          <use xlink:href="../../assets/img/sprite.svg#icon-old-mobile"></use>
+        </svg>
+        <span>Contact</span>
+      </a>
+    </li>
+  </ul>
+</nav>

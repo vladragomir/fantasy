@@ -1,0 +1,15 @@
+@import "../../variables";
+
+/////////////////////////////////////
+// PARAGRAPH
+
+.paragraph {
+  display: flex;
+  justify-content: space-between;
+}
+
+.paragraph:not(:last-of-type) {
+  padding-bottom: 2rem;
+  margin-bottom: 2rem;
+  border-bottom: var(--line);
+}

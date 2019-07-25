@@ -1,0 +1,9 @@
+@import "../../variables";
+
+/////////////////////////////////////
+// PARAGRAPH
+
+.paragraph:not(:last-of-type) {
+  padding-bottom: 2rem;
+  margin-bottom: 2rem;
+}
